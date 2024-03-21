@@ -70,7 +70,7 @@ Take the list of restaurants that we prepared in our system and display them in 
 
 Add a Search Bar and a button with Search Icon on the /Restaurant/List page. We can use [Font Awesome](https://fontawesome.com/kits) for search icon.
 
-	![Search Bar and Search Button][SearchBarAndSearchButton]
+![Search Bar and Search Button][SearchBarAndSearchButton]
 
 ### Finding Restaurants by Name
 
@@ -86,9 +86,9 @@ In IRestaurantData.cs from OdeToFood.Data project, change GetAll() data service 
 2. Add a parameter with the same name "searchTerm" to our OnGet() method.
 3. Modify the OnGet() method to work with our changes.
 
-	![Enter 'Sc' as search term][BindingToAQueryString1]
+![Enter 'Sc' as search term][BindingToAQueryString1]
 
-	![Return only Scott's Pizza][BindingToAQueryString2]
+![Return only Scott's Pizza][BindingToAQueryString2]
 
 ### Using Model Binding and Tag Helpers
 
@@ -97,7 +97,7 @@ In IRestaurantData.cs from OdeToFood.Data project, change GetAll() data service 
 	* Make sure it works with GET request.
 3. Use asp-for tag helper to bind this SearchTerm property with the input search box.
 
-	![Retained search term][UsingModelBindingAndTagHelper]
+![Retained search term][UsingModelBindingAndTagHelper]
 
 ### Building a Detail Page
 
@@ -107,7 +107,7 @@ In IRestaurantData.cs from OdeToFood.Data project, change GetAll() data service 
 4. Build a simple UI on the Razor Page. This page should show the restaurant's name, the id, the location and the type of cuisine.
 5. Provide a navigation button that will take a user back to the list of all restaurants. Name this button "All Restaurants".
 
-	![Empty restaurant detail page][BuildingADetailPage]
+![Empty restaurant detail page][BuildingADetailPage]
 
 ### Linking to the Details
 
@@ -116,15 +116,15 @@ In IRestaurantData.cs from OdeToFood.Data project, change GetAll() data service 
 	* Use asp-for tag helper to redirect user to the Detail page,
 	* Use asp-route tag helper to pass paremeter between pages.
 
-	![Added Zoom-in icon][LinkingToTheDetails1]
+![Added Zoom-in icon][LinkingToTheDetails1]
 
-	![Detail page shows restaurant ID][LinkingToTheDetails2]
+![Detail page shows restaurant ID][LinkingToTheDetails2]
 
 ### Specifying Page Route
 
 Use @page directive to make restaurant Id as part of the URL path to reach Detail page.
 
-	![Using URL Path format][SpecifyingPageRoute]
+![Using URL Path format][SpecifyingPageRoute]
 
 [Back to top](#top)
 
